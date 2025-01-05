@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.form {
+  backdrop-filter: blur(0.2rem);
+  position: relative;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, 10rem);
+
+  border-radius: 0.7rem;
+  padding: 2rem;
+  width: fit-content;
+
+  display: grid;
+  grid-template-columns: 40rem;
+  justify-content: center;
+  align-content: center;
+  gap: 1.2rem;
+
+  box-shadow: 0 0 1rem #ffffff96;
+}
+
+input[name="input"] {
+  border: 1px solid red;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: "Space Mono", monospace;
+}
+input[name="input"]:focus {
+  border: 2px solid white;
+}
+label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+button[type="submit"] {
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+
+  justify-self: center;
+  transition: transform 250ms ease-in-out;
+}
+
+button[type="submit"]:hover {
+  transform: scale(110%);
+}
+
+.bimg {
+  position: relative;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(17, 0, 255, 0.25)
+    ),
+    url(opoy2.jpg);
+  background-size: cover;
+}

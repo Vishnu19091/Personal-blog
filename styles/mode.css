@@ -1,0 +1,211 @@
+/* TEXT COLORS FOR WHITE MODE
+#1e1e1ea8
+#fff
+#000000
+#0000004d
+*/
+
+/* WHITE MODE DESIGN STATRS HERE */
+.bgw {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+.bgb {
+  background-color: #000000;
+  color: #ffffff;
+}
+.bgw .nav a:link,
+.bgw .nav a:visited {
+  color: #1e1e1ea8;
+}
+
+.bgw .nav a:hover {
+  color: #fff;
+  background-color: #1e1e1e;
+  font-weight: bolder;
+}
+
+.bgw strong {
+  color: #000000;
+}
+
+.bgw .menu--content {
+  color: #7c7c7c;
+}
+
+.bgw .social--icon {
+  color: #000000;
+  transition: 1ms ease-in-out;
+}
+
+.bgb hr {
+  border: 1px solid #ffffff;
+}
+
+.bgw hr {
+  border: 1px solid black;
+}
+
+/* NAVIGATION BUTTON */
+.bgw .nav--icon svg {
+  stroke: #1e1e1ea8;
+  height: 3.8rem;
+  width: 3.8rem;
+}
+
+/* POST WHITE */
+.bgw .posts {
+  color: #000000;
+}
+
+.bgw .featured-posts--label {
+  background-color: #e5e5e5;
+  transition: box-shadow 150ms;
+}
+
+.bgw .featured-posts--label:hover {
+  box-shadow: 0 0 1rem #0000004d;
+}
+
+/* FOOTER WHITE */
+.bgw .footer {
+  color: #7c7c7c;
+}
+
+.bgw ::selection {
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: bolder;
+}
+
+/* BLACK MODE DESIGN STARTS HERE */
+
+/* TEXT COLORS FOR DARK MODE
+#ffffff
+#dddddd
+#cececeb0
+#fff5f5
+#1f1f1f
+#d7d7d7
+*/
+
+.bgb strong {
+  color: #ffffff;
+}
+
+.bgb .menu--content {
+  color: #cececeb0;
+}
+
+.bgb .social--icon {
+  color: #fff5f5;
+  transition: all 0.6s;
+}
+
+/* NAVIGATION BLACK */
+
+.bgb .nav a:link,
+.bgb .nav a:visited {
+  color: #ffffff;
+}
+
+.bgb .nav a:hover {
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: bolder;
+}
+
+.bgb .nav--icon svg {
+  stroke: #f1f1f1;
+  height: 3.8rem;
+  width: 3.8rem;
+}
+
+.bgb .featured-posts {
+  color: #ffffff;
+}
+
+.bgb .featured-posts--label {
+  background-color: #1f1f1f;
+  transition: box-shadow 150ms;
+}
+
+.bgb .featured-posts--label:hover {
+  box-shadow: 0 0 1rem #d7d7d7;
+}
+
+.bgb ::selection {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.view-all {
+  font-weight: bold;
+}
+.view-all:hover {
+  box-shadow: 0 0 1rem #ff0000;
+}
+
+.bgb .view-all {
+  background-color: #dddddd;
+  color: #161616;
+}
+
+.bgw .view-all {
+  font-weight: bold;
+  background-color: #161616;
+  color: #dddddd;
+}
+
+/* POSTS PAGE */
+
+/* DARK MODE */
+
+/* 
+post--item #131313
+post--headline #f4f7ff
+post--footer #
+*/
+
+.bgb .post--item {
+  background-color: #131313;
+}
+
+.bgb .post--item:hover {
+  background-color: #1f1f1f;
+  box-shadow: 0 0 2.5rem #ffffff88;
+}
+
+.bgb .post--headline {
+  color: #f4f7ff;
+}
+
+.bgb .post--footer {
+  color: #dedede;
+}
+
+/* WHITE MODE */
+
+/* 
+post--item #d7d7d7
+post--headline #000000
+post--footer #040919
+*/
+
+.bgw .post--item {
+  background-color: #e5e5e5;
+}
+
+.bgw .post--item:hover {
+  box-shadow: 0 0 2.5rem #0000005d;
+}
+
+.bgw .post--headline {
+  color: #000000;
+}
+
+.bgw .post--footer {
+  color: #040919;
+}

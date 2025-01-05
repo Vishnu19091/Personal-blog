@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  top: 0.00000001px;
+  position: sticky;
+
+  backdrop-filter: blur(1rem);
+  z-index: 1;
+}
+
+#time {
+  align-self: center;
+  max-width: fit-content;
+  font-size: 1.4rem;
+}
+
+.mode {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+
+  grid-template-columns: 3.2rem;
+  align-self: center;
+  justify-content: center;
+
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.mode--dark {
+  color: #ffffff;
+}
+
+.mode--white {
+  color: #000000;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  width: 125rem;
+  font-size: 1.5rem;
+}
+
+.nav {
+  height: inherit;
+  align-self: center;
+  display: flex;
+  gap: 1.5rem;
+  height: fit-content;
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+menu {
+  width: 100rem;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1.3rem;
+}
+
+.menu h2 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.menu p {
+  font-size: 2rem;
+}
+
+.menu--content ul {
+  padding-inline-start: 1.7rem;
+}
+
+.socials {
+  margin-top: 2rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.social--icon:hover {
+  transform: scale(1.25);
+}
+
+hr {
+  width: 100rem;
+  margin: 1.5rem auto;
+}
+
+/* NAVIGATION BUTTON */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav--icon {
+  align-self: center;
+}
+
+.nav--icon[name="menu--close"] {
+  display: none;
+}
+
+/* POST WHITE */
+.featured-posts {
+  margin: 0 auto;
+  max-width: 65rem;
+  display: grid;
+  gap: 2rem;
+  position: relative;
+  z-index: auto;
+}
+
+.featured-posts--label {
+  border-radius: 2rem;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-posts--header {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.featured-posts--text {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+.featured-posts--footer {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.featured-posts--link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.view-all {
+  width: fit-content;
+  padding: 1rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+}

@@ -1,0 +1,229 @@
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 23.5rem) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mode {
+    margin-right: 1rem;
+  }
+
+  .header {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .nav {
+    display: none;
+  }
+
+  menu {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .socials {
+    width: 36rem;
+  }
+  hr {
+    width: 32rem;
+  }
+
+  .posts {
+    max-width: 30rem;
+    gap: 3rem;
+    z-index: auto;
+  }
+
+  .posts--label {
+    padding: 1rem;
+  }
+  .posts--header {
+    font-size: 3rem;
+  }
+  .posts--text {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+  }
+  .posts--footer {
+    font-size: 1.2rem;
+  }
+  .footer {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 3;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+
+    width: 100%;
+    height: 100vh;
+
+    /* HIDING AN ELEMENT WITHOUT USING display:none; */
+    opacity: 0;
+
+    /* makes it unaccessible to mouse & keyboard */
+    pointer-events: auto;
+
+    /* Hides from screen reader */
+    visibility: hidden;
+    background: linear-gradient(rgb(128, 0, 128), rgba(255, 0, 0, 0.933));
+    backdrop-filter: blur(12%);
+    z-index: 3;
+  }
+  .nav--open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav--open .nav--icon[name="menu--close"] {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+  }
+
+  .nav--open .nav--icon[name="menu--open"] {
+    display: none;
+  }
+
+  .nav a {
+    font-size: 2rem;
+  }
+
+  .nav--open .nav a:link,
+  .nav--open .nav a:visited {
+    color: #fff;
+    background: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mode {
+    margin-right: 1rem;
+  }
+
+  .header {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .nav {
+    display: none;
+  }
+
+  menu {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .socials {
+    width: 36rem;
+  }
+  hr {
+    width: 32rem;
+  }
+
+  .posts {
+    max-width: 30rem;
+    gap: 3rem;
+    z-index: auto;
+  }
+
+  .posts--label {
+    padding: 1rem;
+  }
+  .posts--header {
+    font-size: 3rem;
+  }
+  .posts--text {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+  }
+  .posts--footer {
+    font-size: 1.2rem;
+  }
+  .footer {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 3;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+
+    width: 100%;
+    height: 100vh;
+
+    /* HIDING AN ELEMENT WITHOUT USING display:none; */
+    opacity: 0;
+
+    /* makes it unaccessible to mouse & keyboard */
+    pointer-events: auto;
+
+    /* Hides from screen reader */
+    visibility: hidden;
+    background: linear-gradient(rgb(128, 0, 128), rgba(255, 0, 0, 0.933));
+    backdrop-filter: blur(12%);
+    z-index: 3;
+  }
+  .nav--open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav--open .nav--icon[name="menu--close"] {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+  }
+
+  .nav--open .nav--icon[name="menu--open"] {
+    display: none;
+  }
+
+  .nav a {
+    font-size: 2rem;
+  }
+
+  .nav--open .nav a:link,
+  .nav--open .nav a:visited {
+    color: #fff;
+    background: none;
+  }
+}

@@ -8,22 +8,33 @@ function UpdateDate() {
 setInterval(UpdateDate, 1000);
 
 // MODE FUNCTION
-let darkmode = document.querySelector(".mode--dark");
-let lightmode = document.querySelector(".mode--white");
+const darkmode = document.querySelector(".mode--dark");
+const lightmode = document.querySelector(".mode--white");
 const bodyElement = document.body;
 
-lightmode.classList.add("hidden");
+const modebtn = document.querySelector(".mode");
+let mode = localStorage.getItem("DarkMode");
 
-darkmode.addEventListener("click", () => {
-  bodyElement.classList.replace("bgb", "bgw");
-  darkmode.classList.add("hidden");
-  lightmode.classList.remove("hidden");
-});
-
-lightmode.addEventListener("click", () => {
+const enableDark = () => {
   bodyElement.classList.replace("bgw", "bgb");
   lightmode.classList.add("hidden");
   darkmode.classList.remove("hidden");
+  localStorage.setItem("DarkMode", "active");
+};
+
+const disableDark = () => {
+  bodyElement.classList.replace("bgb", "bgw");
+  darkmode.classList.add("hidden");
+  lightmode.classList.remove("hidden");
+  localStorage.setItem("DarkMode", null);
+};
+
+lightmode.classList.add("hidden");
+if (mode === "active") enableDark();
+else disableDark();
+modebtn.addEventListener("click", () => {
+  mode = localStorage.getItem("DarkMode");
+  mode !== "active" ? enableDark() : disableDark();
 });
 
 // MOBILE NAVIGATION FUNCTION
